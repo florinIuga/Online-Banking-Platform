@@ -29,3 +29,14 @@ Account activation via link activation sent by email.
 Go to /backend/Docker and run [docker-compose up] command. \
 Go to /backend and run [npm run start-dev]. \
 Go to /frontend and run [npm start].
+
+![p1](https://user-images.githubusercontent.com/47716315/119810191-7b983a80-beee-11eb-812e-7170e25f2a79.png)
+![p2](https://user-images.githubusercontent.com/47716315/119810251-89e65680-beee-11eb-9a91-4669feda1310.png)
+![p3](https://user-images.githubusercontent.com/47716315/119810288-910d6480-beee-11eb-9926-55867edc7918.png)
+![p4](https://user-images.githubusercontent.com/47716315/119810408-af736000-beee-11eb-90d4-7ce9017b4b37.png)
+![p5](https://user-images.githubusercontent.com/47716315/119810476-bef2a900-beee-11eb-9398-26b7020ada5f.png)
+![p6](https://user-images.githubusercontent.com/47716315/119810507-c44ff380-beee-11eb-808e-a430fcef9ccd.png)
+
+
+
+
