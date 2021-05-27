@@ -1,0 +1,230 @@
+@use 'base';
+
+* {
+  font-family: base.$font_stack;
+}
+
+// ------------- Layout basis ------------- 
+
+#screen {
+  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.navbar-brand {
+  padding: 18px 20px;
+  display: inline-block;
+}
+
+
+
+// ------------- Reusable design ------------- 
+
+// Even columns
+.even-columns {
+  display: flex;
+}
+
+.even-columns > * {
+  flex-basis: 100%;
+}
+
+// Dynamic grid
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-grid > * {
+  flex: 1 1 10em;
+}
+
+// Split content
+.split-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.split-content-column {
+  flex: 1 1 50%;
+  min-width: 24ch;
+}
+
+// Centered content
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Header styles
+.logo-text {
+  font-size: larger;
+  font-weight: bold;
+}
+
+
+// Content styles
+
+// Auth
+#bk-auth-illustration {
+  background-image: url('../resources/tree_background.png');
+  background-size: cover;
+  background-position: 75%;
+  position: absolute;
+
+  top: 10%;
+  left: 0;
+  bottom: 5%;
+  width: 50%;
+  height: 85%;
+}
+
+.big-text {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.bigger-text {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.auth-side-panel {
+
+  padding-left: 10%;
+}
+
+input[type=text], input[type=password], input[type=email] {
+  width: 300px;
+
+  border: none;
+  height: 35px;
+  background-color: rgba(201, 201, 201, 0.322);
+  box-shadow: 1px 1px 2px 1px rgba(128, 128, 128, 0.76);
+}
+
+.auth-button {
+  width: 305px;
+  height: 50px;
+  cursor: pointer;
+
+  background-color: base.$darkblue;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  color: white;
+
+  border-radius: 4%;
+  box-shadow: 1px 1px 2px 1px rgba(128, 128, 128, 0.76);
+}
+
+// Books
+
+.generic-content-container {
+  width: 70%;
+  height: 90%;
+
+  overflow-y: scroll;
+
+  .added-text {
+    color: base.$lightgray;
+    font-size: large;
+    font-weight: 500;
+  }
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 20px;
+}
+
+.card-container {
+  display: flex;  
+  max-width: 12em;
+  flex: 1 1 25em;
+  box-shadow: 1px 1px 2px 1px rgba(128, 128, 128, 0.76);
+  border-radius: 1em;
+
+  .card-highlight {
+    background-color: base.$darkblue;
+    flex-basis: 10%;
+    margin-right: 10px;
+    border-radius: 1em;
+  }
+  
+}
+
+
+// Authors
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#author-card-highlight {
+  background-color: base.$lightblue;
+  flex-basis: 15%;
+}
+
+
+// Footer
+.footer-column {
+  font-size: larger;
+  font-weight: bold;
+  color: whitesmoke;
+
+  background-color: base.$darkblue;
+}
+
+.content-header-cell {
+  font-size: large;
+  font-weight: bolder;
+
+  .current-page-button {
+    color: black;
+  }
+
+  .other-page-button {
+    color: rgba(165, 164, 164, 0.815);
+  }
+
+  a:link, a:visited, a:active {
+    text-decoration: none;
+    font-size: larger;
+  }
+
+  a:hover {
+    color: base.$brightblue;
+  }
+
+
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: base.$brightblue;
+  text-decoration: none;
+  font-size: larger
+}
+// se aplica pe toti copiii directi (de pe nivel 1) ai lui footer
+#footer > * {
+  @extend .footer-column;
+}
+
+::-webkit-scrollbar {
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+::-webkit-scrollbar-thumb {
+  background: base.$darkblue;
+  border-radius: 1em;
+}
