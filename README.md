@@ -1,7 +1,7 @@
 # Online Banking Platform - Evo Bank
 
 # Technologies
-Node JS, React, Docker, PostgreSQL.
+Node JS, React, Docker, PostgreSQL, SCSS.
 
 # Security Functionalities
 Authorization based on roles (User, Admin, Support). \
